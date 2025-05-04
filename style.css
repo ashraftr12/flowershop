@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+
+}
+body{
+    background-color: pink;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/*nav start*/
+nav{
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 25px;
+
+}
+span{
+    color: brown;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+ul li a{
+    padding: 5px;
+    color: brown;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+ul li a:hover{
+    background-color: purple;
+    color: white;
+    border-radius: 20px;
+}
+/*nav end*/
+/*main start*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 100px 50px;
+    height: 70vh;
+
+}
+.text-box{
+    
+    width: 500px;
+    line-height: 35px;
+}
+.text-box h2,h3,p{
+    color: brown;
+}
+.icn{
+    font-size: 1.5rem;
+    color: brown;
+    padding: 10px 0;
+}
+.link-main{
+    background-color: rgba(0, 0, 0, 0.096);
+    border-radius: 10px;
+    padding: 10px;
+    width: 280px;
+}
+.link-here{
+    background-color: brown;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin-right: 4px;
+}
+.img-box{
+    filter: drop-shadow(1px 1px 40px rgb(192, 40, 192));
+    animation-name: photo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: pink;
+    margin: auto;
+    
+}
+section h2{
+    text-align: center;
+    color: brown;
+    text-decoration: underline;
+}
+
+.item{
+    margin: auto;
+    border: 2px solid brown;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 30px;
+}
+.item img{
+    border-radius: 30px;
+}
+h5{
+    font-weight: 900;
+    padding-bottom: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+.buy{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.buy p{
+    color: white;
+}
+button{
+    border-radius: 30px;
+    border: none;
+    padding: 5px;
+}
+button a{
+    color: black;
+    padding: 5px;
+
+}
+
+.section h2{
+    margin-bottom: 40px;
+} 
+.section-text, .section-text2{
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: fit-content;
+    
+}
+.section-text h3,p{
+    color: white;
+}
+.section-text p{
+    width: 300px;
+}
+.section-text button{
+    padding: 10px;
+    border-radius: 0px;
+    margin-top: 240px;
+}
+
+footer{
+    background-color: brown;
+    height: 10vh;
+}
+
+@keyframes photo{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+@media (max-width:600px){
+nav{
+    margin-top: 20px;
+}
+main{
+    display: block;
+    height: 100vh;
+}
+.text-box{
+    width: 100%;
+    margin-bottom:30px ;
+}
+.container{
+    display: block;
+    flex-direction: column;
+}
+.sec2 h2{
+    margin-top: 100px;
+}
+.item{
+    width: fit-content;
+    margin: 40px auto;
+    
+}
+.img-box{
+    animation: photo 2s ease-in-out infinite linear;
+    width: 100%;
+}
+@keyframes photo{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+section{
+    padding-top: 50px;
+}
+footer{
+    background-color: brown;
+    height: 7vh;
+    margin-top: 1000px;
+}
+}
